@@ -23,14 +23,15 @@ dan untuk macOs gunnakan
 atau langsung aja
 
 sudo chmod 777 && ./installer.sh
-```
+
 
 Clone this project
 pertama tama yang harus diinstall adalah chromium-browser
 anda bisa mengguanakan command ./installChrome atau 
 sudo apt install chromium-browser bila tidak bisa dua duanya
-
+```
 ./installNode
+```
 ```
 sudo apt install chromium-browser
 ```
@@ -50,19 +51,19 @@ Jika sudah terinstall module nya, tidak ada kendala silahkan jalankan menggunaka
 
 node index.js
 ```
-
+```
 sudo npm install --also-dev
 ```
-
+```
 sudo npm install --force
 ```
+```
+sudo npm audit fix
 
 sudo npm install puppeteer
-```
 
 sudo npm audit fix
 ```
-
 ## Error saat melakukan ./install
 jika error pada saat penginstalan di file install<br>
 silahkan download module disini https://cr4r.me/node_modules.tar.gz, letakkan file yang sudah di download di folder botwat. lalu extrak dengan cara <br>
@@ -81,7 +82,7 @@ sudo node index.js
 |       ✅       | wget website                     |
 |       ✅       | aoyama botnet                    |
 |       ✅       | dan lain lain                    |
-|       ✅       | semua Tools kali linux           |
+|       ✅       | semua Tools on kali linux         |
 
 |    BUG HUNTER |         Feature  PREMIUM ✅       |
 | :-----------: | :--------------------------------: |
