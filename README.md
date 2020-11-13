@@ -1,4 +1,4 @@
-# Bot Whatsapp
+# Bot Whatsapp for hacking & etc.
 untuk tools sangat powerfull  untuk melakukan promosi
 
 "Makin aku banyak membaca, makin aku banyak berpikir
@@ -14,6 +14,16 @@ https://github.com/patricklightsec/BOTWAT-V1
 ```
 ## Tata cara penginstalan
 Sudah di test melalui OS Ubuntu,Kali linux,Parrot Os,chentOs,MacOs, tidak melayani hosting di gitpod.io
+
+dan untuk macOs gunnakan
+- chromium-cli
+- chask
+- brew 
+
+atau langsung aja
+
+sudo bash installer.sh
+```
 
 Clone this project
 pertama tama yang harus diinstall adalah chromium-browser
@@ -37,14 +47,19 @@ sudo.../install
 ```
 Jika sudah terinstall module nya, tidak ada kendala silahkan jalankan menggunakan perintah
 ```bash
+
 node index.js
 ```
+
 sudo npm install --also-dev
 ```
+
 sudo npm install --force
 ```
+
 sudo npm install puppeteer
 ```
+
 sudo npm audit fix
 ```
 
@@ -66,13 +81,14 @@ sudo node index.js
 |       ✅       | wget website                     |
 |       ✅       | aoyama botnet                    |
 |       ✅       | dan lain lain                    |
+|       ✅       | semua Tools kali linux           |
 
 |    BUG HUNTER |         Feature  PREMIUM ✅       |
 | :-----------: | :--------------------------------: |
 |       ❌       | PENTES                         |
 |       ❌       | RCI                            |
 |       ❌       | RFI                            |
-|       ❌       | DORKING                         |
+|       ❌       | DORKING                        |
 
 | Sticker Creator |                Feature           |
 | :-----------: | :--------------------------------: |
