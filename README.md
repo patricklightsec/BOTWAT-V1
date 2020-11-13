@@ -56,7 +56,7 @@ tar -xvf node_modules.tar.gz
 ```
 lalu jalankan script dengan menggunakan perintah
 ```bash
-node index.js
+sudo node index.js
 ```
 ## Features
 
