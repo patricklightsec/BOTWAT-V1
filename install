@@ -1,0 +1,1 @@
+npm i&&npm audit fix&&sudo apt install imagemagick -y&>/dev/null
