@@ -1,3 +1,4 @@
+const gmal = require('./lib/gmailGen.js')
 const xml2js = require('xml2json');
 const cheerio = require("cheerio");
 const crypto = require('crypto');
@@ -335,6 +336,16 @@ module.exports = msgHandler = async (client, message) => {
                 }
             });
             break
+	    case 'gmail':
+            if (args.length <= 1) return client.reply(from, `Fitur gmail adalah sebuah trik untuk memanipulasi sebuah email agar disaat menshare email kita tidak perlu kasih tau email aslinya, cukup kasih tau dengan hasil email di fitur ini.\nContoh:\nKirim lah email kita dari hasil generate, maka akan muncul pesan yang kita kirim kan ke email asli tanpa mengirimnya ke email asli, bingung ya? aku juga bingung kek gak ada kerjaan hehe.\n\nCara penggunaannya:\nmisalkan kita mempunyai email cr4r@gmail.com, maka ketiklah perintah\nemail cr4r\n\n*tidak perlu mengetik @gmail.com*`,id)
+            gmal(body.split(' ')[1]).then((aaa)=>{
+                if(aaa.status==='ok'){
+                    client.reply(from,`${donasi}\n\nSpeed: ${processTime(t, moment())} _Detik_\n\n${aaa.mail}`,id)
+                }else{
+                    client.reply(from, `Gagal Gan, silahkan coba lagi dalam beberapa detik`,id)
+                }
+            })
+	    break
         case 'ping':
             var chats = await client.getAllNewMessages()
             exec(`cat /proc/meminfo \| grep MemFree`, (error, stdout) => {
