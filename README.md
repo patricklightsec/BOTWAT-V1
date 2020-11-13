@@ -1,28 +1,53 @@
 # Bot Whatsapp
-script untuk menjalankan bot pada whatsapp sesuai dengan perintah di script tersebut <br><br>
-"Makin aku banyak membaca, makin aku banyak berpikir<br>
+untuk tools sangat powerfull  untuk melakukan promosi
+
+"Makin aku banyak membaca, makin aku banyak berpikir
 makin aku banyak belajar, makin aku sadar bahwa aku tak mengetahui apa pun." - Voltaire
-## Aplikasi yang harus di install
-Google-Chrome, Nodejs<br>
-Sudah di test melalui OS Ubuntu 18.04 Bionic dan Debian 10 Buster
+
+sofware open source yang harus di install
+- nodeJS (latest version)
+- chromium-browser
+
 ## Clone this project
 ```bash
-git clone https://github.com/cr4r1/botwat
+https://github.com/patricklightsec/BOTWAT-V1
 ```
 ## Tata cara penginstalan
-Jika belum ada google-chrome maka silahkan install dengan cara './installChrome'<br>
-Jika belum ada nodeJS maka silahkan install dengan cara 
-```bash
+Sudah di test melalui OS Ubuntu,Kali linux,Parrot Os,chentOs,MacOs, tidak melayani hosting di gitpod.io
+
+Clone this project
+pertama tama yang harus diinstall adalah chromium-browser
+anda bisa mengguanakan command ./installChrome atau 
+sudo apt install chromium-browser bila tidak bisa dua duanya
+
 ./installNode
 ```
-Jika sudah tersedia semua silahkan ketik perintah
-```bash
-./install
+sudo apt install chromium-browser
+```
+JJika belum tersedia NodeJs silahkan 
+ketikan ./installNode atau sudo apt install nodeJs
+bila belum diupgrade, silahkan update dlu melalui 
+command nvm 
+
+untuk nodeJs di versi 15 silahkan menggunakan Sudo
+diawal perintah
+
+```sudo bash
+sudo.../install
 ```
 Jika sudah terinstall module nya, tidak ada kendala silahkan jalankan menggunakan perintah
 ```bash
 node index.js
 ```
+sudo npm install --also-dev
+```
+sudo npm install --force
+```
+sudo npm install puppeteer
+```
+sudo npm audit fix
+```
+
 ## Error saat melakukan ./install
 jika error pada saat penginstalan di file install<br>
 silahkan download module disini https://cr4r.me/node_modules.tar.gz, letakkan file yang sudah di download di folder botwat. lalu extrak dengan cara <br>
@@ -35,6 +60,14 @@ node index.js
 ```
 ## Features
 
+|     HACKER    |                Feature           |
+| :-----------: | :--------------------------------: |
+|       ✅       | Melihat website                  |
+|       ✅       | wget website                     |
+|       ✅       | aoyama botnet                    |
+|       ✅       | dan lain lain                    |
+
+
 | Sticker Creator |                Feature           |
 | :-----------: | :--------------------------------: |
 |       ✅       | Kirim foto dengan caption          |
@@ -43,11 +76,11 @@ node index.js
 |       ✅       | Send Video or GIF with Caption   |
 
 
-| Downloader |                     Feature                |
-| :------------: | :---------------------------------------------: |
+| Downloader |                     Feature  ❌ akan datang          | 
+| :------------: | :---------------------------------------------:   |
 |       ✅        |   YouTube mp3/mp4 Downloader                    |
-|       ❌        |   Doujin Downloader         |
-|       ❌        |   Instagram Video/Image Downloader                  |
+|       ❌        |   Doujin Downloader                             |
+|       ❌        |   Instagram Video/Image Downloader              |
 |       ❌        |   Facebook Video Downloader                  |
 
 
@@ -136,6 +169,7 @@ node index.js
 * [`open-wa/wa-automate-nodejs`](https://github.com/open-wa/wa-automate-nodejs)
 * [`YogaSakti/imageToSticker`](https://github.com/YogaSakti/imageToSticker)
 * [`MhankBarBar/msghndlr`](https://github.com/MhankBarBar/whatsapp-bot)
+* {cr4r/botwat/msghndlr'(https://github.com/cr4r/botwat)
 
 ### Donate
-* [`Saweria`](https://saweria.co/donate/cr4r)
+* [`Saweria`](https://saweria.co/donate/patrickdarksec)
