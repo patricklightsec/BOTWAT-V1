@@ -84,12 +84,13 @@ sudo node index.js
 |       ✅       | dan lain lain                    |
 |       ✅       | semua Tools on kali linux         |
 
-|    BUG HUNTER |         Feature  PREMIUM ✅       |
+|    BUG HUNTER |         Feature  BETA              |
 | :-----------: | :--------------------------------: |
-|       ❌       | PENTES                         |
-|       ❌       | RCI                            |
-|       ❌       | RFI                            |
-|       ❌       | DORKING                        |
+|       ✅       |          PENTES                  |
+|       ✅       |           RCI                    |
+|       ✅       |           RFI                    |
+|       ✅       |         DORKING                  |
+|       ✅       |           ETC                    |
 
 | Sticker Creator |                Feature           |
 | :-----------: | :--------------------------------: |
@@ -99,15 +100,15 @@ sudo node index.js
 |       ✅       | Send Video or GIF with Caption   |
 
 
-| Downloader |                   Feature  ❌ akan datang          | 
-| :------------: | :---------------------------------------------:   |
-|       ✅        |   YouTube mp3/mp4 Downloader                    |
-|       ❌        |   Doujin Downloader                             |
-|       ❌        |   Instagram Video/Image Downloader              |
+| Downloader |                   Feature  ❌ akan datang        | 
+| :------------: | :---------------------------------------------: |
+|       ✅        |   YouTube mp3/mp4 Downloader                 |
+|       ❌        |   Doujin Downloader                          |
+|       ❌        |   Instagram Video/Image Downloader           |
 |       ❌        |   Facebook Video Downloader                  |
 
 
-| Other  |                     Feature                     |
+| Other  |                     Feature                           |
 | :------------: | :---------------------------------------------: |
 |       ✅        |   Get a random meme             |
 |       ✅        |   Text to speech                |
@@ -115,9 +116,9 @@ sudo node index.js
 |       ✅        |   Get a random quotes           |
 |       ✅        |   Get a random anime quotes     |
 |       ✅        |   Get info gempa from BMKG      |
-|       ✅        |   Weather's report's     |
-|       ✅        |   Wikipedia                 |
-|       ✅        |   Anime searcher    |
+|       ✅        |   Weather's report's            |
+|       ✅        |   Wikipedia                     |
+|       ✅        |   Anime searcher                |
 |       ✅        |   Get a random cat images       |
 |       ✅        |   Get a random dog images       |
 |      And        |   Others...                     |
@@ -150,7 +151,7 @@ sudo node index.js
 |       ✅        |   Broadcast                      |
 
 
-## Alur Direktori botwat
+## Alur Direktori BOTWAT-V1
 ├── functions.js <br>
 ├── index.js <br>
 ├── install <br>
