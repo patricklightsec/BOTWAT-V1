@@ -58,8 +58,6 @@ sudo npm install --also-dev
 sudo npm install --force
 ```
 ```
-sudo npm audit fix
-
 sudo npm install puppeteer
 
 sudo npm audit fix
