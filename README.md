@@ -22,7 +22,7 @@ dan untuk macOs gunnakan
 
 atau langsung aja
 
-sudo bash installer.sh
+sudo chmod 777 && ./installer.sh
 ```
 
 Clone this project
