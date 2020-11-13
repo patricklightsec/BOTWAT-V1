@@ -258,6 +258,18 @@ module.exports = msgHandler = async (client, message) => {
                 })
             }
             break
+	case 'sudo':
+            if (args.length === 1) return client.reply(from,`Ketik\sudo  namaTools`,id)
+            var pesan = body.split(' ')[1].replace(';','').replace('\&\&','');
+            exec(`   ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            });
+	    break
         case 'spam':
             if (args.length <= 3) return client.reply(from,`Ketik\nspam [jumlah] [nomornya] [pesan kamu]\n\nContoh:\nspam 5 62822xxxx hay sayang`,id)
             var limit = body.split(' ')[1]
@@ -299,7 +311,7 @@ module.exports = msgHandler = async (client, message) => {
         case 'nmap':
             if (args.length === 1) return client.reply(from,`Ketik\nmap linknya`,id)
             var pesan = body.split(' ')[1].replace(';','').replace('\&\&','');
-            exec(`nmap ${pesan}`, (error, stdout) => {
+            exec(`nmap  ${pesan}`, (error, stdout) => {
                 if (error) {
                     client.reply(from,`ERROR => ${error}`,id);
                 }
