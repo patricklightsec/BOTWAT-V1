@@ -16,5 +16,9 @@ sudo pacman -Sgg | grep blackarch-wireless
 sudo pacman -S blackarch-category
 sudo pacman -S package-name
 sudo apt-get install parrot-tools
+sudo pip install hacking
+sudo pip install h8mail
+sudo apt install hydra
+
 
 exit;
