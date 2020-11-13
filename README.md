@@ -67,6 +67,12 @@ node index.js
 |       ✅       | aoyama botnet                    |
 |       ✅       | dan lain lain                    |
 
+|    BUG HUNTER |         Feature  PREMIUM ✅       |
+| :-----------: | :--------------------------------: |
+|       ❌       | PENTES                         |
+|       ❌       | RCI                            |
+|       ❌       | RFI                            |
+|       ❌       | DORKING                         |
 
 | Sticker Creator |                Feature           |
 | :-----------: | :--------------------------------: |
@@ -76,7 +82,7 @@ node index.js
 |       ✅       | Send Video or GIF with Caption   |
 
 
-| Downloader |                     Feature  ❌ akan datang          | 
+| Downloader |                   Feature  ❌ akan datang          | 
 | :------------: | :---------------------------------------------:   |
 |       ✅        |   YouTube mp3/mp4 Downloader                    |
 |       ❌        |   Doujin Downloader                             |
