@@ -15,5 +15,6 @@ sudo pacman -Sg | grep blackarch
 sudo pacman -Sgg | grep blackarch-wireless
 sudo pacman -S blackarch-category
 sudo pacman -S package-name
+sudo apt-get install parrot-tools
 
 exit;
