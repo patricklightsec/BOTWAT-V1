@@ -1,4 +1,3 @@
-const gmal = require('./lib/gmailGen.js')
 const xml2js = require('xml2json');
 const cheerio = require("cheerio");
 const crypto = require('crypto');
