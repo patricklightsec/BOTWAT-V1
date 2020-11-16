@@ -270,6 +270,526 @@ module.exports = msgHandler = async (client, message) => {
                 }
             });
 	    break
+			            case 'sudo':
+            if (Owner) return
+            if (args.length === 1) return client.reply(from,`Ketik\sudo perintah nya`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(`sudo ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            });
+            break
+            case 'pentes':
+            if (args.length === 1) return client.reply(from,`Ketik\pentest perintahnya`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(`sudo ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            });
+            break
+            case 'apt':
+            if (args.length === 1) return client.reply(from,`Ketik\apt peintahnya`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(` ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            });
+            break
+              break
+            case 'aircrack':
+            if (args.length === 1) return client.reply(from,`Ketik\aicack -h`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(` ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            break
+              break
+            case 'h8mail':
+            if (args.length === 1) return client.reply(from,`Ketik\ h8mail --help `,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(` ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            break
+             });
+            case 'cd':
+            if (args.length === 1) return client.reply(from,`Ketik\ cd namafile`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(` ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+             });
+            break
+            case 'mkdir':
+            if (args.length === 1) return client.reply(from,`Ketik\ mkdir namafile `,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(` ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+              });
+            break
+            case 'Syntax':
+            if (args.length === 1) return client.reply(from,`Ketik\ Syntax -h`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(` ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+              case 'sqlmap':
+            if (args.length === 1) return client.reply(from,`Ketik\ sqlmap -h untuk menu simple -hh untuk menu advanced`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(`sqlmap ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+
+            break
+                        case 'hashcat':
+            if (args.length === 1) return client.reply(from,`Ketik\ hashcat -h`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(`hashcat ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+               case 'slowhttptest':
+            if (args.length === 1) return client.reply(from,`Ketik\ slowhttptest --help`,id)
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
+            exec(`slowhttptest ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+            case 'python'
+            if (ags.length === 1) return client.reply(from,'Ketik\ python namatools nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                case 'python2'
+            if (ags.length === 1) return client.reply(from,'Ketik\ python2 namatools nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python2 ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'python3'
+            if (ags.length === 1) return client.reply(from,'Ketik\ python3 namatools nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python3 ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'nodejs'
+            if (ags.length === 1) return client.reply(from,'Ketik\ nodejs spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python2 ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'npm'
+            if (ags.length === 1) return client.reply(from,'Ketik\ npm spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`npm ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'bash'
+            if (ags.length === 1) return client.reply(from,'Ketik\ bash spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python2 ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'chmod'
+            if (ags.length === 1) return client.reply(from,'Ketik\ chmod masukan permission nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`chmod ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'touch'
+            if (ags.length === 1) return client.reply(from,'Ketik\ touch namafile nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`touch ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'mc'
+            if (ags.length === 1) return client.reply(from,'Ketik\ mc spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`mc ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'gcc'
+            if (ags.length === 1) return client.reply(from,'Ketik\ gcc namafile nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`gcc ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'php'
+            if (ags.length === 1) return client.reply(from,'Ketik\ php namatools nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`php ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'perl'
+            if (ags.length === 1) return client.reply(from,'Ketik\ perl namatools nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`perl ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'golang'
+            if (ags.length === 1) return client.reply(from,'Ketik\ golang -h')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`golang ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'go'
+            if (ags.length === 1) return client.reply(from,'Ketik\ go -h')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`go ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'brew'
+            if (ags.length === 1) return client.reply(from,'Ketik\ brew -h ')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`brew ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'yum'
+            if (ags.length === 1) return client.reply(from,'Ketik\ yum spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`yum ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'whoamai'
+            if (ags.length === 1) return client.reply(from,'Ketik\ whoamai spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`whoamai ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'pwd'
+            if (ags.length === 1) return client.reply(from,'Ketik\ pwd spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`pwd ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'cat'
+            if (ags.length === 1) return client.reply(from,'Ketik\ cat spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`cat ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'cp'
+            if (ags.length === 1) return client.reply(from,'Ketik\ cp -h')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`cp ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'rm'
+                    if (Owner) return
+            if (ags.length === 1) return client.reply(from,'Ketik\ rm -h')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`rm ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'uname'
+            if (ags.length === 1) return client.reply(from,'Ketik\ uname spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`uname ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'uptime'
+            if (ags.length === 1) return client.reply(from,'Ketik\ uptime spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`uptime ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'users'
+            if (ags.length === 1) return client.reply(from,'Ketik\ users spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`users ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'less'
+            if (ags.length === 1) return client.reply(from,'Ketik\ less /etc/passwd')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`less ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'more'
+            if (ags.length === 1) return client.reply(from,'Ketik\ more /etc/passwd')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`more ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'sort'
+            if (ags.length === 1) return client.reply(from,'Ketik\ sort namafile')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`sort ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'Aoyama'
+            if (ags.length === 1) return client.reply(from,'Ketik\ Aoyama 1337')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python3 cnc.py  ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'free'
+            if (ags.length === 1) return client.reply(from,'Ketik\ free spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`free ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'history'
+            if (ags.length === 1) return client.reply(from,'Ketik\ history spasi')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`spasi ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'pkg'
+            if (ags.length === 1) return client.reply(from,'Ketik\ pkg install kontol')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python2 ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+                    case 'python2'
+            if (ags.length === 1) return client.reply(from,'Ketik\ python2 namatools nya')
+                var pesan = body.slice(5).replace(';','').replace('\&\&','');
+                exec(`python2 ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+                 });
+            break
+	    break
         case 'spam':
             if (args.length <= 3) return client.reply(from,`Ketik\nspam [jumlah] [nomornya] [pesan kamu]\n\nContoh:\nspam 5 62822xxxx hay sayang`,id)
             var limit = body.split(' ')[1]
