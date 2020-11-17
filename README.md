@@ -1,5 +1,10 @@
+                                                     ![patrick](https://c.top4top.io/p_1782yf9sj1.gif)
+
+
+
 # Bot Whatsapp for hacking & etc.
-untuk tools sangat powerfull  untuk melakukan promosi
+untuk tools sangat powerfull  dan Support Tools Pentest
+
 
 "Makin aku banyak membaca, makin aku banyak berpikir
 makin aku banyak belajar, makin aku sadar bahwa aku tak mengetahui apa pun." - Voltaire
