@@ -7,6 +7,7 @@
 
 
 # BOT WHATSAPP KALI-LINUX & etc.
+# TAMBAHAN UBUNTU LOCALHOST UNTUK VPS
 untuk tools sangat powerfull  untuk melakukan promosi
 
 "Makin aku banyak membaca, makin aku banyak berpikir
