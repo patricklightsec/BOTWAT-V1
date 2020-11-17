@@ -270,6 +270,19 @@ module.exports = msgHandler = async (client, message) => {
                 }
             });
 	          break
+			case 'date':
+            if (args.length === 1) return client.reply(from,`Ketik\date  spasi`,id)
+            var pesan = body.split(' ')[1].replace(';','').replace('\&\&','');
+            exec(`date  ${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            });
+	          break
+			
 			       case 'sudo':
             if (isOwner) return
             if (args.length === 1) return client.reply(from,`Ketik\sudo perintah nya`,id)
