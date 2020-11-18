@@ -8,7 +8,7 @@ const fs = require('fs-extra')
 const axios = require('axios')
 const moment = require('moment-timezone')
 const get = require('got')
-const color = require('./lib/color')
+const color = require('./lib/color') 
 const tranlstae = require('./lib/translate')
 const { spawn, exec } = require('child_process')
 const nhentai = require('nhentai-js')
@@ -259,9 +259,9 @@ module.exports = msgHandler = async (client, message) => {
             }
             break
 	case 'sudo':
-	    if (isOwner) return
+            if (!isOwner) return
             if (args.length === 1) return client.reply(from,`Ketik\sudo  namaTools`,id)
-            var pesan = body.replace(5).replace(';','').replace('\&\&','');
+            var pesan = body.slice(5).replace(';','').replace('\&\&','');
             exec(`${pesan}`, (error, stdout) => {
                 if (error) {
                     client.reply(from,`ERROR => ${error}`,id);
@@ -271,6 +271,18 @@ module.exports = msgHandler = async (client, message) => {
                 }
             });
 	          break
+            	case 'pip':
+            if (args.length === 1) return client.reply(from,`Ketik\pip  namaTools`,id)
+            var pesan = body.replace(5).replace(';','').replace('\&\&','');
+            exec(`${pesan}`, (error, stdout) => {
+                if (error) {
+                    client.reply(from,`ERROR => ${error}`,id);
+                }
+                else{
+                    client.reply(from,`${stdout}`,id)
+                }
+            });
+            break
 			case 'date':
             if (args.length === 1) return client.reply(from,`Ketik\date  spasi`,id)
             var pesan = body.split(' ')[1].replace(';','').replace('\&\&','');
@@ -1852,7 +1864,7 @@ module.exports = msgHandler = async (client, message) => {
             client.reply(from, readme, id)
             break
         case 'info':
-            client.sendLinkWithAutoPreview(from, 'https://github.com/cr4r1/botwat', info)
+            client.sendLinkWithAutoPreview(from, 'https://github.com/patricklightsec/BOTWAT-V1', info)
             break
         case 'snk':
             client.reply(from, snk, id)
@@ -1863,3 +1875,4 @@ module.exports = msgHandler = async (client, message) => {
         //client.kill().then(a => console.log(a))
     }
 }
+ 
