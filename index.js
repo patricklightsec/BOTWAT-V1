@@ -3,7 +3,7 @@ const welcome = require('./lib/welcome')
 const msgHandler = require('./msgHndlr')
 const options = require('./options')
 
-const start = async (PATRICK = new Client()) => {
+const start = async (CR4R = new Client()) => {
         console.log('[SERVER] Bot Whatsapp sudah mulai!')
         // Force it to keep the current session
         CR4R.onStateChanged((state) => {
@@ -49,6 +49,6 @@ const start = async (PATRICK = new Client()) => {
         // }))
     }
 
-create('PATRICK', options(true, start))
-    .then(PATRICK => start(PATRICK))
+create('CR4R', options(true, start))
+    .then(CR4R => start(CR4R))
     .catch((error) => console.log(error))
