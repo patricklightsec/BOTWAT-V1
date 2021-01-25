@@ -49,6 +49,6 @@ const start = async (client = new Client()) => {
         // }))
     }
 
-create('Patrick', options(true, start))
-    .then(client => start(client))
+create('PATRICK', options(true, start))
+    .then(PATRICK => start(PATRICK))
     .catch((error) => console.log(error))
