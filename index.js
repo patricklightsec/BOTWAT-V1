@@ -49,6 +49,6 @@ const start = async (CR4R = new Client()) => {
         // }))
     }
 
-create('CR4R', options(true, start))
+create(options(true, start))
     .then(CR4R => start(CR4R))
     .catch((error) => console.log(error))
